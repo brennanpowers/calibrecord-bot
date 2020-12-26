@@ -13,6 +13,7 @@ public class CalibreProperties {
     private String validExtensions;
     private String calibreUrl;
     private String alternateDropUrl;
+    private String alternateDropPassword;
 
     public String getImportPathAbsolute() {
         return importPathAbsolute;
@@ -44,23 +45,31 @@ public class CalibreProperties {
         return calibreUrl;
     }
 
-    public String getCalibreUrlAsLink() {
-        return ConfigurationPropertiesTools.formatStringAsLink(getCalibreUrl());
-    }
-
     public void setCalibreUrl(String calibreUrl) {
         this.calibreUrl = calibreUrl;
+    }
+
+    public String getCalibreUrlAsLink() {
+        return ConfigurationPropertiesTools.formatStringAsLink(getCalibreUrl());
     }
 
     public String getAlternateDropUrl() {
         return alternateDropUrl;
     }
 
+    public void setAlternateDropUrl(String alternateDropUrl) {
+        this.alternateDropUrl = alternateDropUrl;
+    }
+
     public String getAlternateDropUrlAsLink() {
         return ConfigurationPropertiesTools.formatStringAsLink(getAlternateDropUrl());
     }
 
-    public void setAlternateDropUrl(String alternateDropUrl) {
-        this.alternateDropUrl = alternateDropUrl;
+    public String getAlternateDropPassword() {
+        return alternateDropPassword;
+    }
+
+    public void setAlternateDropPassword(String alternateDropPassword) {
+        this.alternateDropPassword = alternateDropPassword;
     }
 }

@@ -20,6 +20,6 @@ class ConfigurationPropertiesTools {
         if (link == null) {
             return null;
         }
-        return String.format("<https://%s>", link);
+        return String.format("<%s>", link);
     }
 }

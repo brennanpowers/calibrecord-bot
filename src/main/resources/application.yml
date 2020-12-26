@@ -9,6 +9,7 @@ calibre:
   valid-extensions: ${VALID_EXTENSIONS}
   calibre-url: ${CALIBRE_URL}
   alternate-drop-url: ${ALTERNATE_DROP_URL}
+  alternate-drop-password: ${ALTERNATE_DROP_PASSWORD}
 
 command:
   prefix: ${COMMAND_PREFIX}

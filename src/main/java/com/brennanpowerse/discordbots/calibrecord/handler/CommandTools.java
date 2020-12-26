@@ -43,11 +43,23 @@ public class CommandTools {
 
     public String getAlternateDropSiteMessage() {
         String alternateDropUrl = calibreProperties.getAlternateDropUrlAsLink();
-        String alternateDropMessage =
-                (alternateDropUrl != null) ?
-                        getMessage("alternate-drop-site", alternateDropUrl) : getMessage("no alternate-drop-site");
+        String alternateDropMessage;
+        if (alternateDropUrl == null) {
+            // Tell user there isn't an alternate drop site configured
+            alternateDropMessage = getMessage("no-alternate-drop-site");
+        } else {
+            String partialMessage = getMessage("alternate-drop-site", alternateDropUrl);
+            if (calibreProperties.getAlternateDropPassword() != null) {
+                // Add password message if there is a password
+                String passwordMessage = getMessage("alternate-drop-password", alternateDropUrl, calibreProperties.getAlternateDropPassword());
+                alternateDropMessage = String.format("%s %s", partialMessage, passwordMessage);
+            } else {
+                alternateDropMessage = partialMessage;
+            }
+        }
         return alternateDropMessage;
     }
+
     private String getMessage(String key, String... parameters) {
         return messageSource.getMessage(key, parameters, Locale.getDefault());
     }

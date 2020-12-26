@@ -14,32 +14,6 @@ public class CommandHandler implements Handler {
     private final CommandProperties commandProperties;
     private final CommandTools commandTools;
 
-    private enum Command {
-        HELLO("hello"),
-        HELP("help"),
-        CALIBRE_URL("link"),
-        ALTERNATE_DROP_URL("drop");
-
-        private final String value;
-
-        Command(String value) {
-            this.value = value;
-        }
-
-        public String getValue() {
-            return value;
-        }
-
-        public static Command getCommand(String value) {
-            for (Command command : Command.values()) {
-                if (command.getValue().equals(value)) {
-                    return command;
-                }
-            }
-            return null;
-        }
-    }
-
     public CommandHandler(CommandProperties commandProperties, CommandTools commandTools) {
         this.commandProperties = commandProperties;
         this.commandTools = commandTools;
@@ -88,5 +62,31 @@ public class CommandHandler implements Handler {
         Message message = event.getMessage();
         boolean shouldHandle = message.getContentStripped().startsWith(commandProperties.getPrefix());
         return shouldHandle;
+    }
+
+    private enum Command {
+        HELLO("hello"),
+        HELP("help"),
+        CALIBRE_URL("link"),
+        ALTERNATE_DROP_URL("drop");
+
+        private final String value;
+
+        Command(String value) {
+            this.value = value;
+        }
+
+        public static Command getCommand(String value) {
+            for (Command command : Command.values()) {
+                if (command.getValue().equals(value)) {
+                    return command;
+                }
+            }
+            return null;
+        }
+
+        public String getValue() {
+            return value;
+        }
     }
 }
