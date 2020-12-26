@@ -1,7 +1,7 @@
-package com.brennanpowerse.discordbots.calibrecord.beans;
+package com.brennanpowers.discordbots.calibrecord.beans;
 
-import com.brennanpowerse.discordbots.calibrecord.config.properties.DiscordProperties;
-import com.brennanpowerse.discordbots.calibrecord.listener.DefaultMessageListener;
+import com.brennanpowers.discordbots.calibrecord.config.properties.DiscordProperties;
+import com.brennanpowers.discordbots.calibrecord.listener.DefaultMessageListener;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import org.springframework.context.annotation.Bean;

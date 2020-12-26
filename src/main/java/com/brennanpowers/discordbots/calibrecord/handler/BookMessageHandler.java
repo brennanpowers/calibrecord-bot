@@ -1,6 +1,6 @@
-package com.brennanpowerse.discordbots.calibrecord.handler;
+package com.brennanpowers.discordbots.calibrecord.handler;
 
-import com.brennanpowerse.discordbots.calibrecord.config.properties.CalibreProperties;
+import com.brennanpowers.discordbots.calibrecord.config.properties.CalibreProperties;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;

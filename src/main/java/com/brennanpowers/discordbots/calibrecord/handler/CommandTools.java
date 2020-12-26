@@ -1,8 +1,8 @@
-package com.brennanpowerse.discordbots.calibrecord.handler;
+package com.brennanpowers.discordbots.calibrecord.handler;
 
-import com.brennanpowerse.discordbots.calibrecord.config.properties.CalibreProperties;
-import com.brennanpowerse.discordbots.calibrecord.config.properties.CommandProperties;
-import com.brennanpowerse.discordbots.calibrecord.config.properties.ListenerProperties;
+import com.brennanpowers.discordbots.calibrecord.config.properties.CalibreProperties;
+import com.brennanpowers.discordbots.calibrecord.config.properties.CommandProperties;
+import com.brennanpowers.discordbots.calibrecord.config.properties.ListenerProperties;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Component;
 

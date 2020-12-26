@@ -1,6 +1,6 @@
-package com.brennanpowerse.discordbots.calibrecord.listener;
+package com.brennanpowers.discordbots.calibrecord.listener;
 
-import com.brennanpowerse.discordbots.calibrecord.config.properties.ListenerProperties;
+import com.brennanpowers.discordbots.calibrecord.config.properties.ListenerProperties;
 import net.dv8tion.jda.api.entities.MessageChannel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

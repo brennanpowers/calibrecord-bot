@@ -1,4 +1,4 @@
-package com.brennanpowerse.discordbots.calibrecord;
+package com.brennanpowers.discordbots.calibrecord;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

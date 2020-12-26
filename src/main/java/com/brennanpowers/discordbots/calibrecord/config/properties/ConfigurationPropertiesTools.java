@@ -1,4 +1,4 @@
-package com.brennanpowerse.discordbots.calibrecord.config.properties;
+package com.brennanpowers.discordbots.calibrecord.config.properties;
 
 import java.util.ArrayList;
 import java.util.List;

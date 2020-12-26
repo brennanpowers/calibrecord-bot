@@ -1,4 +1,4 @@
-package com.brennanpowerse.discordbots.calibrecord.config.properties;
+package com.brennanpowers.discordbots.calibrecord.config.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

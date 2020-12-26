@@ -1,7 +1,7 @@
-package com.brennanpowerse.discordbots.calibrecord.listener;
+package com.brennanpowers.discordbots.calibrecord.listener;
 
-import com.brennanpowerse.discordbots.calibrecord.handler.BookMessageHandler;
-import com.brennanpowerse.discordbots.calibrecord.handler.CommandHandler;
+import com.brennanpowers.discordbots.calibrecord.handler.BookMessageHandler;
+import com.brennanpowers.discordbots.calibrecord.handler.CommandHandler;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.slf4j.Logger;
