@@ -1,0 +1,14 @@
+discord:
+  api-token: ${DISCORD_API_TOKEN}
+
+listener:
+  channels: ${CHANNEL_LIST}
+
+calibre:
+  import-path-absolute: ${IMPORT_PATH_ABSOLUTE}
+  valid-extensions: ${VALID_EXTENSIONS}
+  calibre-url: ${CALIBRE_URL}
+  alternate-drop-url: ${ALTERNATE_DROP_URL}
+
+command:
+  prefix: ${COMMAND_PREFIX}
